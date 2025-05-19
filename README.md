@@ -1,23 +1,31 @@
-<!-- hide -->
-# The Misspell Challenge
-<!-- endhide -->
+//Diapositiva 1-5 (HTML) "Find the bug in the code"
 
-Learning in public means collaboration, and you don't have to be an expert to collaborate. Misspells come to the rescue! The perfect ice-breaker for open-source contributions; fixing a misspell is easy and requires almost no GitHub or Git experience.
+Hemos identificado etiquetas HTML mal cerradas (</p>) y en el caso de (/div) cerradas en una línea incorrecta.
 
-## 🔷 How to fix a misspell on a 4Geeks Lesson:  
+Una de las cosas que nos repite Alex hasta la saciedad es que no seamos "guarretes" con el código. Vemos un texto largo e interpreto que no hay saltos de línea.
 
-![edit on Github](https://github.com/breatheco-de/the-misspell-chalenge/blob/master/assets/github-logo2.png?raw=true)
+Etiquetas cerradas en diferentes líneas de forma innecesaria. <h2> es una etiqueta de una sola línea, no debería abrir y cerrar en líneas diferentes.
 
-1. Click the pencil icon that says "Edit on GitHub" at the top right of the lesson, and the lesson source file will be editable. 
+Etiquetas <h2> y <p> mezcladas en un mismo nivel sin tener estructura clara.
 
-2. Correct the misspelling of the lesson.
+//Diapositiva 6-7 (Javascript)  
 
-3. Finally, click on `"Pull Request"`.
+Vemos que calc no dice que me va a calcular.
 
-## 📝 Instructions:
+nums y total son demasiados genéricos, ya que no me explican que representan exactamente. Cómo diría el profe ¿números de qué? ¿total de qué?
 
-1. Find one misspell on any of the 4Geeks lessons, projects or exercises and create a `pull request` with the fix.
+//Diapositiva 8-13 (JavaScript) "Variable global"
 
-> 👉 **IMPORTANT**: Please find another project to fix, this project has already been fixed enough 😂
+result está fuera de las funciones, así que se considera global (si he apuntado bien en los apuntes) así que, cualquier función puede cambiarla, sin importar el orden.
 
-This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+Se debe cambiar function accumulate por let result, ya que accumulate depende de que result tenga un valor adecuado puesto con anterioridad. Si se cambia el orden, el resultado también cambia.
+
+//Diapositivas 14-16 (JavaScript) Condicionales super mega anidades
+
+if al cubo. Cada if dentro de otro if, marea a los ojos. En la clase del miércoles 14/05 nos dijeron que cuanto más se anide más dificil es seguir una lógica.
+
+Agobia ver tanta sangría, visualmente dificulta el mantenimiento.
+
+Si hay que evaluar cuesta verlo, y ni te cuento si más tarde tengo que modificarlo. Seguro que lo rompo a lo bestia.
+
+Así que vemos que las condiciones lo dejan de forma clara y ordenada, evitamos usar else, porque tengo return, por lo tanto al devolver con return el resto de código no se ejecutará.
